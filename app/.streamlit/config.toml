@@ -1,0 +1,5 @@
+[theme]
+base="dark"
+primaryColor="#0D47A1" # Azul escuro
+secondaryColor="#D32F2F" # Vermelho para contraste (pode ser usado em outros elementos)
+textColor="#FFFFFF"

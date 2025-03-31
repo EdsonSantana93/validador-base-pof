@@ -1,0 +1,387 @@
+{
+    "layouts": [
+        {
+            "nome": "default_lancamento",
+            "tipo": "lancamento",
+            "modificavel": false,
+            "validacoes": {
+                "credito_conta_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_13",
+                    "match_ph"
+                ],
+                "debito_conta_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_13",
+                    "match_ph"
+                ],
+                "data_contabil": [
+                    "not_null",
+                    "date_format",
+                    "lte_today"
+                ],
+                "data_valor": [
+                    "not_null",
+                    "date_format",
+                    "lte_today"
+                ],
+                "codigo_produto_operacional": [
+                    "not_null",
+                    "numeric"
+                ],
+                "codigo_transtype": [
+                    "not_null",
+                    "length_6",
+                    "match_pattern_lancamento"
+                ],
+                "descricao_transtype": [
+                    "not_null",
+                    "match_ph"
+                ],
+                "valor_transacao": [
+                    "numeric",
+                    "gte_0"
+                ],
+                "empresa": [
+                    "not_null",
+                    "match_pattern_empresa",
+                    "match_ph"
+                ],
+                "debito_departamento": [
+                    "not_null",
+                    "numeric",
+                    "length_5",
+                    "match_ph"
+                ],
+                "credito_departamento": [
+                    "not_null",
+                    "numeric",
+                    "length_5",
+                    "match_ph"
+                ],
+                "debito_ispb": [
+                    "not_null",
+                    "numeric",
+                    "length_8",
+                    "match_ph"
+                ],
+                "credito_ispb": [
+                    "not_null",
+                    "numeric",
+                    "length_8",
+                    "match_ph"
+                ],
+                "codigo_servico_lancamento_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_3"
+                ]
+            }
+        },
+        {
+            "nome": "default_saldo",
+            "tipo": "saldo",
+            "modificavel": false,
+            "validacoes": {
+                "conta_contabil_saldo": [
+                    "not_null",
+                    "numeric",
+                    "length_13",
+                    "match_ph"
+                ],
+                "data_contabil": [
+                    "not_null",
+                    "date_format",
+                    "lte_today"
+                ],
+                "data_valor": [
+                    "not_null",
+                    "date_format",
+                    "lte_today"
+                ],
+                "codigo_transtype": [
+                    "not_null",
+                    "length_6",
+                    "match_pattern_saldo"
+                ],
+                "descricao_transtype": [
+                    "not_null",
+                    "match_ph"
+                ],
+                "valor_saldo": [
+                    "numeric",
+                    "gte_0"
+                ],
+                "empresa": [
+                    "not_null",
+                    "match_pattern_empresa",
+                    "match_ph"
+                ],
+                "departamento_saldo": [
+                    "not_null",
+                    "numeric",
+                    "length_5",
+                    "match_ph"
+                ],
+                "ispb_saldo": [
+                    "not_null",
+                    "numeric",
+                    "length_8",
+                    "match_ph"
+                ]
+            }
+        },
+        {
+            "nome": "layout Edson",
+            "tipo": "lancamento",
+            "modificavel": true,
+            "validacoes": {
+                "credito_conta_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_13",
+                    "match_ph"
+                ],
+                "debito_conta_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_13",
+                    "match_ph"
+                ],
+                "data_contabil": [
+                    "not_null",
+                    "date_format",
+                    "lte_today"
+                ],
+                "data_valor": [
+                    "not_null",
+                    "date_format",
+                    "lte_today"
+                ],
+                "codigo_produto_operacional": [
+                    "not_null",
+                    "numeric"
+                ],
+                "codigo_transtype": [
+                    "not_null",
+                    "length_6",
+                    "match_pattern_lancamento"
+                ],
+                "descricao_transtype": [
+                    "not_null",
+                    "match_ph"
+                ],
+                "valor_transacao": [
+                    "numeric",
+                    "gte_0"
+                ],
+                "empresa": [
+                    "not_null",
+                    "match_pattern_empresa",
+                    "match_ph"
+                ],
+                "debito_departamento": [
+                    "not_null",
+                    "numeric",
+                    "length_5",
+                    "match_ph"
+                ],
+                "credito_departamento": [
+                    "not_null",
+                    "numeric",
+                    "length_5",
+                    "match_ph"
+                ],
+                "debito_ispb": [
+                    "not_null",
+                    "numeric",
+                    "length_8",
+                    "match_ph"
+                ],
+                "credito_ispb": [
+                    "not_null",
+                    "numeric",
+                    "length_8",
+                    "match_ph"
+                ],
+                "codigo_servico_lancamento_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_3"
+                ],
+                "novo_atributo": [
+                    "not_null"
+                ]
+            }
+        },
+        {
+            "nome": "Novo Layout",
+            "tipo": "lancamento",
+            "modificavel": true,
+            "validacoes": {
+                "credito_conta_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_13",
+                    "match_ph"
+                ],
+                "debito_conta_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_13",
+                    "match_ph"
+                ],
+                "data_contabil": [
+                    "not_null",
+                    "date_format",
+                    "lte_today"
+                ],
+                "data_valor": [
+                    "not_null",
+                    "date_format",
+                    "lte_today"
+                ],
+                "codigo_produto_operacional": [
+                    "not_null",
+                    "numeric"
+                ],
+                "codigo_transtype": [
+                    "not_null",
+                    "length_6",
+                    "match_pattern_lancamento"
+                ],
+                "descricao_transtype": [
+                    "not_null",
+                    "match_ph"
+                ],
+                "valor_transacao": [
+                    "numeric",
+                    "gte_0"
+                ],
+                "empresa": [
+                    "not_null",
+                    "match_pattern_empresa",
+                    "match_ph"
+                ],
+                "debito_departamento": [
+                    "not_null",
+                    "numeric",
+                    "length_5",
+                    "match_ph"
+                ],
+                "credito_departamento": [
+                    "not_null",
+                    "numeric",
+                    "length_5",
+                    "match_ph"
+                ],
+                "debito_ispb": [
+                    "not_null",
+                    "numeric",
+                    "length_8",
+                    "match_ph"
+                ],
+                "credito_ispb": [
+                    "not_null",
+                    "numeric",
+                    "length_8",
+                    "match_ph"
+                ],
+                "codigo_servico_lancamento_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_3"
+                ],
+                "atributo_novo": [
+                    "not_null",
+                    "numeric"
+                ]
+            }
+        },
+        {
+            "nome": "layout novo w",
+            "tipo": "lancamento",
+            "modificavel": true,
+            "validacoes": {
+                "credito_conta_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_13",
+                    "match_ph"
+                ],
+                "debito_conta_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_13",
+                    "match_ph"
+                ],
+                "data_contabil": [
+                    "not_null",
+                    "date_format",
+                    "lte_today"
+                ],
+                "data_valor": [
+                    "not_null",
+                    "date_format",
+                    "lte_today"
+                ],
+                "codigo_produto_operacional": [
+                    "not_null",
+                    "numeric"
+                ],
+                "codigo_transtype": [
+                    "not_null",
+                    "length_6",
+                    "match_pattern_lancamento"
+                ],
+                "descricao_transtype": [
+                    "not_null",
+                    "match_ph"
+                ],
+                "valor_transacao": [
+                    "numeric",
+                    "gte_0"
+                ],
+                "empresa": [
+                    "not_null",
+                    "match_pattern_empresa",
+                    "match_ph"
+                ],
+                "debito_departamento": [
+                    "not_null",
+                    "numeric",
+                    "length_5",
+                    "match_ph"
+                ],
+                "credito_departamento": [
+                    "not_null",
+                    "numeric",
+                    "length_5",
+                    "match_ph"
+                ],
+                "debito_ispb": [
+                    "not_null",
+                    "numeric",
+                    "length_8",
+                    "match_ph"
+                ],
+                "credito_ispb": [
+                    "not_null",
+                    "numeric",
+                    "length_8",
+                    "match_ph"
+                ],
+                "codigo_servico_lancamento_contabil": [
+                    "not_null",
+                    "numeric",
+                    "length_3"
+                ],
+                "teste": [
+                    "not_null"
+                ]
+            }
+        }
+    ]
+}

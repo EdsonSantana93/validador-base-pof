@@ -1,0 +1,11 @@
+[theme]
+base="light"
+primaryColor="#FF6200"
+backgroundColor="#F8F8F8"
+
+
+[theme.sidebar]
+base="light"
+backgroundColor="#FF6200"
+textColor="#ffffff"
+

@@ -1,30 +1,12 @@
-/* Azul Itaú para títulos, headers e subheaders */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #0073A8 !important;
-    /* Laranja Itaú */
+[data-testid="stSidebar"] img[src*="itau-novo-logotipo.jpg"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    z-index: 1000;
 }
 
-/* Azul Itaú para botões, mantendo aparência nativa do Streamlit */
-.stButton>button {
-    background-color: #0073A8 !important;
-    /* Azul Itaú */
-    color: #FFFFFF !important;
-    border: none !important;
-}
-
-/* Laranja Itaú para o menu lateral (sidebar) */
-[data-testid="stSidebar"] {
-    background-color: #FF6200 !important;
-    color: #FFFFFF !important;
-}
-
-/* Fundo quase branco, puxando para um bege suave */
-.stApp {
-    background-color: #f7f3f3 !important;
-    /* Bege claro */
+[data-testid="stSidebar"] div[data-testid="stVerticalBlock"]>div:nth-child(2) {
+    z-index: 999;
 }

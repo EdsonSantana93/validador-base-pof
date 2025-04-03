@@ -24,7 +24,7 @@ def _display_selected_layout_option(selected_option: str) -> None:
 
 def main() -> None:
     """Função principal para gerenciar layouts de validação."""
-    #styles.load_css()
+    styles.load_css()
     st.title("Gerenciamento de Layouts de Validação")
 
     layout_option = st.radio(

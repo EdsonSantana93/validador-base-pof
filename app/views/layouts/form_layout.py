@@ -13,7 +13,7 @@ def display_attribute_form(base_data: Dict, selected_layout: Optional[Dict], is_
         new_attribute = st.text_input("Nome do Atributo", placeholder="Ex: novo_atributo", key="new_attribute")
         available_rules = ["not_null", "numeric", "match_ph", "date_format", "lte_today", "gte_0"]
         selected_rules = st.multiselect("Regras do Atributo", options=available_rules, key="selected_rules")
-        submitted = st.form_submit_button("Incluir/Atualizar Atributo")
+        submitted = st.form_submit_button("Incluir/Atualizar Atributo", type="primary")
 
         if submitted:
             if not new_attribute:

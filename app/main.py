@@ -1,14 +1,12 @@
-# app/main.py
+# main.py
 
 import streamlit as st
 import config.styles.styles as styles
-import os
-    
+from views.sidebar import carregar_sidebar
 
 def main():
     #styles.load_css()
-    # Carregar CSS em TODAS as páginas
-    st.title("Página em Construção")
-# Executa a função main do layout_manager
+    carregar_sidebar()  # Carrega o logo na sidebar
+
 if __name__ == "__main__":
-    main()  # Chama a função main diretamente, sem a necessidade de run()
+    main()
